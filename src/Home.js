@@ -1,21 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faStar} from '@fortawesome/free-solid-svg-icons';
 import './Home.css';
 
 function Home() {
   return (
-    <div className="home">
-      <div className="card">
-        <Link to="/menu">Menu</Link>
-      </div>
-      <div className="card">
-        <Link to="/button">Button</Link>
-      </div>
-      <div className="card">
-        <Link to="/navigation">Navigation</Link>
-      </div>
-      <div className="card">
-        <Link to="/transition">Transition</Link>
+    <div className="container">
+      <div className="ring"><FontAwesomeIcon icon={faStar} /></div>
+      <div className="card-container">
+        <div className="card">
+          <a href="/menu">Menu</a>
+        </div>
+        <div className="card">
+          <a href="/button">Button</a>
+        </div>
+        <div className="card">
+          <a href="/navigation">Navigation</a>
+        </div>
+        <div className="card">
+          <a href="/transition">Transition</a>
+        </div>
       </div>
     </div>
   );
